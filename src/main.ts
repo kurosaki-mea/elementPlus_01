@@ -11,6 +11,14 @@ import 'element-plus/dist/index.css'  //导入elementPlus的全局css样式文�
 
 const app = createApp(App)
 
+// 引入 ElementPlus 图标库，并注册所有图标组件
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+// 注册图标，循环注册所有图标组件
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+    app.component(key, component)
+}
+
+
 app.use(createPinia())
 app.use(router)
 
