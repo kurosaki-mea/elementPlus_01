@@ -31,6 +31,18 @@
             <el-button type="danger" icon="Delete"/>纯图标按钮
             <el-button icon="Search" circle color="red"/>
         </div>
+        <h3>按钮组</h3>
+        <el-button-group>
+            <el-button type="primary" icon="Search"></el-button>
+            <el-button type="primary" icon="Edit"></el-button>
+            <el-button type="primary" icon="Delete"></el-button>
+        </el-button-group>
+        <br/><br/>
+        <el-button-group type="primary"> <!-- 给整个group设置按钮类型属性-->
+            <el-button icon="House"></el-button>
+            <el-button icon="Edit"></el-button>
+            <el-button icon="Delete"></el-button>
+        </el-button-group>
         
     </div>
 

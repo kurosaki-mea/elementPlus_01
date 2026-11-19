@@ -2,7 +2,7 @@
 
 import demo_01 from './components/demo_01.vue'; // 1.按钮
 import demo_02 from './components/demo_02.vue'; // 2.图标
-
+import demo_03 from './components/demo_03.vue'; // 3.提示框
 
 </script>
 
@@ -10,6 +10,7 @@ import demo_02 from './components/demo_02.vue'; // 2.图标
   <div>
     <demo_01 />
     <demo_02 />
+    <demo_03 />
   </div>
 </template>
 
