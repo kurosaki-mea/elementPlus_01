@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
+import { ElMessage } from 'element-plus'; // 引入提示框组件
 
 // 默认选中的菜单项的索引
 const selectedIndex = ref('3-2'); // 默认选中的菜单项的索引
@@ -83,6 +84,7 @@ const userCommand = (command: string) => { //点击下拉菜单，触发的回�
         <!-- 【1】 @command：固定事件名；userCommand：我自己写的处理函数名 -->
         <!-- <el-dropdown> 内部源码写的是“当用户点了某一项下拉菜单时，
         向外触发一个叫 command 的事件”，所以 @command 可以去执行我自定义的函数-->
+        <!-- command 负责传“暗号” -->
 
         <span>个人中心 <el-icon>
                 <Avatar />
@@ -92,6 +94,7 @@ const userCommand = (command: string) => { //点击下拉菜单，触发的回�
                 <!-- 【2】 command：固定属性名；"order"：自己定的暗号值 -->
                 <el-dropdown-item command="order">订单</el-dropdown-item>
                 <el-dropdown-item command="logout">退出</el-dropdown-item>
+                <el-dropdown-item command="logout" @click="ElMessage.success('已退出账号')">退出+提示</el-dropdown-item>
                 <!-- El组件预留的属性(prop)名：command -->
             </el-dropdown-menu>
         </template>
