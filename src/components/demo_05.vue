@@ -71,14 +71,18 @@ const tabRemove = (name: string) => {    // name 是要删除的标签页的名�
     </el-tabs>
     <h3>标签页 卡片风格</h3>
     <p>type="card"。带边框的卡片：type="border-card"</p>
-    <el-tabs v-model="selectedName" @tab-click="tabClick" type="card">
-        <el-tab-pane label="标签1标题" name="1">标签1的内容</el-tab-pane>
+    <!-- type="card"：开启卡片风格标签页（默认是普通下划线样式；另有 border-card 带边框卡片样式） -->
+    <el-tabs v-model="selectedName" @tab-click="tabClick" type="card" closable>
+        <el-tab-pane label="标签1标题" name="1" >标签1的内容</el-tab-pane>
         <el-tab-pane label="标签2标题" name="2">标签2的内容</el-tab-pane>
+        <!-- closable：加在 <el-tabs> 控制全部标签显示关闭按钮，加在 <el-tab-pane> 只控制单个（单个优先级更高） -->
+        <!-- 注意：只负责显示 ×，真正删除数据需配合 @tab-remove 手动处理 -->
     </el-tabs>
 
     <h3>动态添加</h3>
     <el-button @click="tabAdd">添加</el-button>
     <el-tabs v-model="selectedName" @tab-remove="tabRemove" closable type="card">
+        // closable 是允许关闭标签页 有个 X 号
         <el-tab-pane v-for="(value, key) in tabs.arr" :key="value.name" :label="value.title" :name="value.name">
             {{ value.content }}
         </el-tab-pane>
