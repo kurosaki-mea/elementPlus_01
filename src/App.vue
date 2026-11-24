@@ -9,6 +9,7 @@ import demo_06 from './components/demo_06.vue'; // 6.输入框
 import demo_07 from './components/demo_07.vue'; // 7.单选框和复选框
 import demo_08 from './components/demo_08.vue'; // 8.下拉框
 import demo_09 from './components/demo_09.vue'; // 9.日期选择器
+import demo_10 from './components/demo_10.vue'; // 10.表单
 
 
 
@@ -24,8 +25,9 @@ import demo_09 from './components/demo_09.vue'; // 9.日期选择器
     <demo_05 /> <hr />
     <demo_06 /> <hr />
     <demo_07 /> <hr /> 
-    <demo_08 /> <hr />  -->
-    <demo_09 />
+    <demo_08 /> <hr />
+    <demo_09 /> <hr />  -->
+    <demo_10 />
   </div>
 </template>
 
