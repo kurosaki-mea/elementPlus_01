@@ -24,8 +24,16 @@ const checkboxGroupChange = (val: string[]) => {
 
 
 </script>
+<!--单选框和复选框中，change事件的详细说明，
+    单选框的change事件，返回的是选中的value值，
+    复选框的change事件，返回的是选中的value值数组，
+    数组中的每个元素，都是复选框的value属性值，
+-->
+
 <template>
     <h1> 7 单选框和复选框 </h1>
+    <!--【单选框】：v-model 绑定单个值，@change 回调返回当前选中的单个 value -->
+    <!--【复选框组】：v-model 绑定数组，@change 回调返回所有已选中项组成的数组 -->
     <h3>单选框</h3>
     <el-radio v-model="radio_01" value="1">1前端</el-radio>
     <el-radio v-model="radio_01" value="2">2后端</el-radio>
@@ -33,11 +41,13 @@ const checkboxGroupChange = (val: string[]) => {
     <!-- // 默认选中value为3的选项 -->
     <h3>单选框 - 事件绑定</h3>
     <!-- 下面代码中的change事件，用于监听单选框的改变 -->
+    <!--【单选框】：v-model 绑定单个值，@change 回调返回当前选中的单个 value -->
     <el-radio v-model="radio_02" value="a" @change="radioChange">1前端</el-radio>
     <el-radio v-model="radio_02" value="b" @change="radioChange">2后端</el-radio>
     <el-radio v-model="radio_02" value="c" @change="radioChange">3数据库</el-radio>
 
     <h3>单选框组</h3>
+    <!--【单选框组】：v-model 绑定单个值，@change 回调返回当前选中的单个 value -->
     <el-radio-group v-model="radio_03" @change="radioGroupChange">
         <!-- 不需要对每一个单选框都绑定change事件，
             只需要对 单选框组group 绑定change事件，
@@ -49,6 +59,7 @@ const checkboxGroupChange = (val: string[]) => {
 
     <!-- 复选框 -->
     <h3>复选框</h3>
+    <!--【复选框组】：v-model 绑定数组，@change 回调返回所有已选中项组成的数组 -->
     <el-checkbox-group v-model="checked_01" @change="checkboxGroupChange">
         <el-checkbox value="1">1前端</el-checkbox>
         <el-checkbox value="2">2后端</el-checkbox>
