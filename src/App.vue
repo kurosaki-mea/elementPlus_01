@@ -7,18 +7,23 @@ import demo_04 from './components/demo_04.vue'; // 4.导航菜单 Menu
 import demo_05 from './components/demo_05.vue'; // 5.标签页 Tabs
 import demo_06 from './components/demo_06.vue'; // 6.输入框
 import demo_07 from './components/demo_07.vue'; // 7.单选框和复选框
+import demo_08 from './components/demo_08.vue'; // 8.下拉框
+
+
+
 
 </script>
 
 <template>
   <div>
-    <!-- <demo_01 />
-    <demo_02 />
-    <demo_03 />
-    <demo_04 /> 
-    <demo_05 />
-    <demo_06 />-->
-    <demo_07 />
+    <!-- <demo_01 /> <hr />
+    <demo_02 /> <hr />
+    <demo_03 /> <hr />
+    <demo_04 /> <hr />
+    <demo_05 /> <hr />
+    <demo_06 /> <hr />
+    <demo_07 /> <hr /> -->
+    <demo_08 />
   </div>
 </template>
 
