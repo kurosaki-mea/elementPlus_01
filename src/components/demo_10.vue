@@ -15,11 +15,12 @@ const data_01 = ref({
 })
 // 提交表单
 const add = () => {
-    console.log(data_01.value)
-    ElMessage.success('提交成功')
+    console.log(data_01.value) // 查看提交的表单数据
+    ElMessage.success('提交成功') // 提交成功后，显示成功提示
 }
 // 重置表单
 const reset = () => {
+    // 只需要把data_01.value赋值为空对象，即可重置表单数据
     data_01.value = {
         name: '',
         radio: '',
@@ -29,7 +30,7 @@ const reset = () => {
         multipleSelect: [],
         textarea: '',
     }
-    ElMessage.success('重置成功')
+    ElMessage.success('重置成功') // 重置成功后，显示成功提示
 }
 
 
