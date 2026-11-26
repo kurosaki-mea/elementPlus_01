@@ -5,6 +5,8 @@ This template should help get you started developing with Vue 3 in Vite.
 ## elementPlus demo 1
 2026年11月16日
 
+[视频地址](https://www.bilibili.com/video/BV1Ei421o7To)
+<https://www.bilibili.com/video/BV1Ei421o7To>
 ---
 # 🎨 Vue 3 + Element Plus 组件库实战与进阶备忘录
 
