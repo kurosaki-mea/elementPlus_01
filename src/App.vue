@@ -11,7 +11,8 @@ import demo_08 from './components/demo_08.vue'; // 8.下拉框
 import demo_09 from './components/demo_09.vue'; // 9.日期选择器
 import demo_10 from './components/demo_10.vue'; // 10.表单
 import demo_11 from './components/demo_11.vue'; // 11.对话框
-import demo_12 from './components/demo_12.vue';
+import demo_12 from './components/demo_12.vue'; // 12.分页
+import demo_13 from './components/demo_13.vue'; // 13.表格.vue';
 
 
 
@@ -19,7 +20,8 @@ import demo_12 from './components/demo_12.vue';
 
 <template>
   <div>
-    <!-- <demo_01 /> <hr />
+    <!--    -->
+    <demo_01 /> <hr />
     <demo_02 /> <hr />
     <demo_03 /> <hr />
     <demo_04 /> <hr />
@@ -29,8 +31,9 @@ import demo_12 from './components/demo_12.vue';
     <demo_08 /> <hr />
     <demo_09 /> <hr />
     <demo_10 /> <hr />
-    <demo_11 /> <hr />  -->
+    <demo_11 /> <hr />
     <demo_12 /> <hr />
+    <demo_13 /> <hr />
   </div>
 </template>
 
