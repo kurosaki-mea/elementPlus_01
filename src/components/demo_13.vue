@@ -123,10 +123,10 @@ const edit_01 = (index: number, row: UserRow) => {
                 //      .row是表格组件的属性，用于获取当前行的数据对象
                 // scope.row.id：当前行的id，例如1,2,3,4等
                 -->
-                <el-button size="samll" type="primary" @click="edit_01(scope.$index, scope.row)">
+                <el-button size="small" type="primary" @click="edit_01(scope.$index, scope.row)">
                     编辑
                 </el-button>
-                <el-button size="samll" type="danger" @click="del_01_row(scope.$index)">删除</el-button>
+                <el-button size="small" type="danger" @click="del_01_row(scope.$index)">删除</el-button>
             </template>
         </el-table-column>
 
