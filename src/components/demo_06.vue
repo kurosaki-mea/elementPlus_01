@@ -27,7 +27,7 @@ const keyWord = ref('') // 搜索框输入内容
 
         <h3>文本域</h3>
         <!-- 定义一个只有 2 行的文本域：rows="2" -->
-        <el-input type="textarea" v-model="content" rows="2" />
+        <el-input type="textarea" v-model="content" :rows="2" />
 
         <h3>输入内容长度限制，输入框</h3>
         <!-- maxlength 限制长度；show-word-limit 显示具体限制 -->

@@ -83,7 +83,7 @@ src/
 * **核心聚焦**：结合前三个阶段的所有技能，实现企业级数据管理界面。
 * **关键知识点**：
   * **表格与分页 (`demo_11`)**：`el-table` 绑定 `:data` 数组，`el-table-column` 利用作用域插槽 `#default="{ row, $index }"` 自定义渲染操作按钮、状态标签（`el-tag`）；搭配 `el-pagination` 实现页码与每页条数联动。
-  * **压轴综合实战 (`demo_13`, 6.3 KB)**：全项目体量最大的核心模块，完整串联了**顶部条件查询表单 $\rightarrow$ 表格数据渲染 $\rightarrow$ 分页切换 $\rightarrow$ 点击新增/编辑弹出 `el-dialog` 表单校验 $\rightarrow$ 删除触发 `ElMessageBox` 确认与 `ElMessage` 提示**的完整业务闭环。
+  * **压轴综合实战 (`demo_13`)**：全项目体量最大的核心模块，完整串联了**顶部条件查询表单 $\rightarrow$ 表格数据渲染 $\rightarrow$ 分页切换 $\rightarrow$ 点击新增/编辑弹出 `el-dialog` 表单校验 $\rightarrow$ 删除触发 `ElMessageBox` 确认与 `ElMessage` 提示**的完整业务闭环。
 
 ---
 

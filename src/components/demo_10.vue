@@ -87,7 +87,17 @@ const reset = () => {
 
         <h4>文本域</h4>
         <el-form-item label="文本域">
-            <el-input type="textarea" v-model="data_01.textarea" rows="4" placeholder="请输入内容" />
+            <!--
+            // rows和:rows的区别是，rows是固定行数，:rows是动态行数，根据内容自动调整行数
+            // rows="4"的数值类型是字符串，需要转换为数字类型
+            // :rows="4"的数值类型是数字类型，不需要转换
+            -->
+            <el-input type="textarea" v-model="data_01.textarea" :rows="4" placeholder="请输入内容" />
+            <!-- 错误：传的是字符串 "2" ->
+            <el-input type="textarea" rows="2" v-model="content" />
+
+            <!- 正确：传的是数字 2 ->
+            <el-input type="textarea" :rows="2" v-model="content" />-->
         </el-form-item>
 
         <el-form-item>
