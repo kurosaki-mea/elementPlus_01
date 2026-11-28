@@ -59,7 +59,7 @@ const dialogClose = () => {
     <- 对话框的显示是由v-model控制的，当dialog_01为true时，对话框显示，否则不显示。
     <- 而@close方法是对话框关闭时触发的通知回调，当对话框关闭时，会触发@close方法。 -->
     <el-dialog v-model="dialog_01" width="500px" title="对话框标题" draggable @close="dialogClose">
-        <el-form label-width="80" style="width: 400px;">
+        <el-form label-width="80px" style="width: 400px;">
             <h4>文本框</h4>
             <el-form-item label="文本框">
                 <el-input v-model="data_01.name" placeholder="请输入姓名" />
