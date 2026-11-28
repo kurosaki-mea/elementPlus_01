@@ -116,12 +116,22 @@ const edit_01 = (index: number, row: UserRow) => {
         <el-table-column label="操作" width="200">
             <template #default="scope">
                 <!--
+                // 这个#default="scope"的参数scope，是一个对象，包含了当前行的所有属性值
+                // scope.$index：当前行的索引，从0开始，
+                // scope.row：当前行的数据，是一个对象，包含了当前行的所有属性值
+                // scope.row.id：当前行的id，例如1,2,3,4等
+                // scope.row.name：当前行的姓名，例如张三，李四，王五等
+                // scope.row.age：当前行的年龄，例如18,20,22等
+                // ...
                 // edit_01的参数：scope.$index：当前行的索引，scope.row：当前行的数据
                 // scope.$index：当前行的索引，从0开始，
                 //       $index是表格组件的属性，用于获取当前行的索引，从0开始计数
                 // scope.row：当前行的数据，是一个对象，包含了当前行的所有属性值
                 //      .row是表格组件的属性，用于获取当前行的数据对象
                 // scope.row.id：当前行的id，例如1,2,3,4等
+                // scope.row.name：当前行的姓名，例如张三，李四，王五等
+                // scope.row.age：当前行的年龄，例如18,20,22等
+                // ...
                 -->
                 <el-button size="small" type="primary" @click="edit_01(scope.$index, scope.row)">
                     编辑
